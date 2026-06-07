@@ -1,192 +1,25 @@
 
 # 🚀 AI Cybersecurity Assistant
 
-An Agentic AI-powered cybersecurity platform that helps security analysts identify threats, enrich indicators, map MITRE ATT&CK techniques, retrieve CISA advisories, and generate mitigation recommendations automatically.
-
 ---
+# About the Project
 
-## 📦 Step 1 — Install Required Packages
+AI Cybersecurity Assistant is an intelligent security analysis platform designed to help security professionals identify, investigate, and respond to cyber threats efficiently. By combining Generative AI, Retrieval-Augmented Generation (RAG), and Agentic AI, the system provides real-time threat intelligence, vulnerability insights, MITRE ATT&CK mapping, and actionable mitigation recommendations.
 
-Open a terminal in the project folder and run:
+## Key Features
 
-```bash
-pip install -r requirements.txt
-```
+* AI-Powered Threat Analysis
+* Intelligent Threat Intelligence Enrichment
+* VirusTotal Integration for File and URL Reputation Checks
+* AbuseIPDB Integration for IP Reputation Analysis
+* MITRE ATT&CK Technique Mapping
+* CISA Security Advisory Retrieval
+* Automated Security Recommendation Generation
+* PDF-Based Security Report Generation
+* Vector Database Powered Knowledge Retrieval
+* Interactive Web Dashboard
 
-Or install manually:
-
-```bash
-pip install flask flask-cors sentence-transformers faiss-cpu requests reportlab transformers
-```
-
----
-
-## 🔑 Step 2 — Configure API Keys
-
-Open:
-
-```text
-backend/config.py
-```
-
-Add your API keys:
-
-```python
-VIRUSTOTAL_API_KEY = "your_virustotal_api_key"
-ABUSEIPDB_API_KEY = "your_abuseipdb_api_key"
-```
-
----
-
-## ▶️ Step 3 — Start the Backend
-
-Run:
-
-```bash
-python app.py
-```
-
-You should see:
-
-```text
-AI Cybersecurity Assistant running at http://localhost:5000
-```
-
----
-
-## 🌐 Step 4 — Open the Frontend
-
-Open:
-
-```text
-frontend/index.html
-```
-
-in your browser.
-
-Or visit:
-
-```text
-http://localhost:5000
-```
-
-if Flask serves the frontend.
-
----
-
-## 🔍 Step 5 — Analyze Threats
-
-Examples:
-
-```text
-Analyze IP: 8.8.8.8
-```
-
-```text
-Analyze Hash: e99a18c428cb38d5f260853678922e03
-```
-
-```text
-Recent ransomware techniques
-```
-
-```text
-Latest CISA vulnerabilities
-```
-
-The assistant will:
-
-✅ Search threat intelligence sources
-✅ Query VirusTotal
-✅ Query AbuseIPDB
-✅ Map MITRE ATT&CK techniques
-✅ Retrieve CISA advisories
-✅ Generate mitigation recommendations
-✅ Create downloadable security reports
-
----
-
-# ⚙️ How It Works
-
-### 1️⃣ User submits a security query
-
-Examples:
-
-```text
-IP Address
-File Hash
-Domain
-Threat Description
-```
-
-↓
-
-### 2️⃣ Flask Backend Receives Request
-
-```text
-Frontend → Flask API
-```
-
-↓
-
-### 3️⃣ Agentic AI Workflow Starts
-
-Multiple AI agents work together:
-
-```text
-Threat Detection Agent
-MITRE Mapping Agent
-Threat Intelligence Agent
-Recommendation Agent
-Report Generation Agent
-```
-
-↓
-
-### 4️⃣ External Intelligence Sources Queried
-
-```text
-VirusTotal API
-AbuseIPDB API
-MITRE ATT&CK Framework
-CISA Advisories Feed
-```
-
-↓
-
-### 5️⃣ FAISS Vector Search
-
-Relevant cybersecurity knowledge is retrieved from the vector database.
-
-↓
-
-### 6️⃣ AI Generates Recommendations
-
-The system provides:
-
-```text
-Threat Classification
-Risk Level
-MITRE ATT&CK Mapping
-Indicators of Compromise (IOCs)
-Mitigation Steps
-```
-
-↓
-
-### 7️⃣ Results Displayed on Dashboard
-
-Users receive:
-
-```text
-Threat Analysis
-Security Recommendations
-PDF Security Report
-```
-
----
-
-# 🛠️ Technologies Used
+## Technologies Used
 
 ### Frontend
 
@@ -196,23 +29,57 @@ PDF Security Report
 
 ### Backend
 
-* Flask
-* REST APIs
+* Flask (Python)
 
-### AI & RAG
+### AI & Machine Learning
+
+* Generative AI
+* Agentic AI
+* Retrieval-Augmented Generation (RAG)
+* Sentence Transformers
+
+### Database & Search
 
 * FAISS Vector Database
-* Sentence Transformers
-* Agentic AI Architecture
 
-### Threat Intelligence
+### Threat Intelligence Sources
 
 * VirusTotal API
 * AbuseIPDB API
 * MITRE ATT&CK Framework
 * CISA Advisories
 
-### Reporting
+## Project Objectives
 
-* PDF Report Generation
+* Develop an intelligent cybersecurity assistant for threat investigation.
+* Automate threat intelligence gathering and analysis.
+* Provide actionable security recommendations using AI.
+* Demonstrate the practical use of Generative AI in cybersecurity operations.
+* Improve incident response efficiency through intelligent automation.
+
+## How It Works
+
+1. The user submits a security-related query, IP address, URL, file hash, or threat description.
+2. The system retrieves relevant cybersecurity knowledge using a vector database.
+3. Threat intelligence is collected from external security sources.
+4. Agentic AI coordinates multiple analysis tasks and enriches the information.
+5. MITRE ATT&CK techniques and threat context are identified.
+6. AI generates mitigation recommendations and security insights.
+7. Results are displayed through an interactive dashboard and can be exported as PDF reports.
+
+## Future Enhancements
+
+* Real-Time SIEM Integration
+* Threat Hunting Automation
+* Malware Classification Models
+* Security Alert Prioritization
+* Multi-Source Threat Intelligence Correlation
+* SOC Analyst Copilot Features
+* Cloud Security Monitoring
+* Multi-Language Support
+
+## Conclusion
+
+AI Cybersecurity Assistant showcases how Generative AI, RAG, and Agentic AI can be leveraged to enhance cybersecurity operations. By combining intelligent threat analysis, automated knowledge retrieval, and actionable recommendations, the platform helps security teams make faster and more informed decisions in modern threat environments.
+
 
