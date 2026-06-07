@@ -216,34 +216,3 @@ PDF Security Report
 
 * PDF Report Generation
 
----
-
-# 📂 Project Structure
-
-```text
-AI-Cybersecurity-Assistant/
-
-├── frontend/
-│   ├── index.html
-│   ├── style.css
-│   └── script.js
-│
-├── backend/
-│   ├── threat_analyzer.py
-│   ├── report_generator.py
-│   └── config.py
-│
-├── agents/
-│   ├── threat_detection_agent.py
-│   ├── mitre_mapping_agent.py
-│   ├── recommendation_agent.py
-│   └── report_agent.py
-│
-├── data/
-├── reports/
-├── app.py
-├── requirements.txt
-└── README.md
-```
-
-This format looks professional on GitHub and clearly explains how your AI Cybersecurity Assistant works to recruiters, mentors, and teammates.
