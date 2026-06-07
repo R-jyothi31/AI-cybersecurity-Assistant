@@ -1,0 +1,10 @@
+flask
+requests
+faiss-cpu
+sentence-transformers
+langchain
+langchain-community
+reportlab
+numpy
+pandas
+python-dotenv

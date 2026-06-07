@@ -1,0 +1,20 @@
+MITRE ATT&CK Techniques
+
+T1110 - Brute Force
+
+Adversaries attempt passwords repeatedly
+to gain unauthorized access.
+
+-------------------------------------
+
+T1595 - Active Scanning
+
+Adversaries scan systems and services
+to gather information.
+
+-------------------------------------
+
+T1190 - Exploit Public Facing Application
+
+Attackers exploit vulnerabilities in
+internet-facing applications.

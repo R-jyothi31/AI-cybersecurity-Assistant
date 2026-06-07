@@ -1,0 +1,53 @@
+SQL Injection
+
+SQL Injection is a web security vulnerability that allows attackers to interfere with queries made to a database.
+
+Prevention:
+- Parameterized Queries
+- Input Validation
+- Least Privilege Access
+
+------------------------------------------------
+
+Brute Force Attack
+
+A brute force attack occurs when attackers repeatedly attempt passwords to gain unauthorized access.
+
+Prevention:
+- Multi-Factor Authentication
+- Account Lockout
+- Strong Password Policies
+
+------------------------------------------------
+
+OWASP Top 10
+
+OWASP Top 10 is a list of the most critical web application security risks.
+
+Examples:
+- SQL Injection
+- Broken Access Control
+- Security Misconfiguration
+
+------------------------------------------------
+
+MITRE ATT&CK
+
+MITRE ATT&CK is a cybersecurity knowledge base of adversary tactics and techniques.
+
+Examples:
+T1110 - Brute Force
+T1190 - Exploit Public Facing Application
+
+------------------------------------------------
+
+NIST Cybersecurity Framework
+
+Framework used to manage and reduce cybersecurity risk.
+
+Functions:
+- Identify
+- Protect
+- Detect
+- Respond
+- Recover

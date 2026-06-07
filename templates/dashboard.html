@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>
+        AI Cybersecurity Assistant
+    </title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static',
+          filename='style.css') }}">
+
+</head>
+
+<body>
+
+<div class="sidebar">
+
+    <h2>
+        🛡 CyberSOC AI
+    </h2>
+
+    <ul>
+
+        <li>Dashboard</li>
+
+        <li>Threat Analysis</li>
+
+        <li>Threat Intelligence</li>
+
+        <li>MITRE ATT&CK</li>
+
+        <li>AI Assistant</li>
+
+        <li>Reports</li>
+
+    </ul>
+
+</div>
+
+<div class="main">
+
+    <div class="header">
+
+        <h1>
+            AI Cybersecurity Assistant
+        </h1>
+
+    </div>
+
+    <div class="cards">
+
+        <div class="card">
+
+            <h3>
+                Threat Score
+            </h3>
+
+            <h2 id="severityCard">
+                Low
+            </h2>
+
+        </div>
+
+        <div class="card">
+
+            <h3>
+                Threats
+            </h3>
+
+            <h2 id="threatCount">
+                0
+            </h2>
+
+        </div>
+
+        <div class="card">
+
+            <h3>
+                Server Issues
+            </h3>
+
+            <h2 id="issueCount">
+                0
+            </h2>
+
+        </div>
+
+        <div class="card">
+
+            <h3>
+                AI Status
+            </h3>
+
+            <h2>
+                Active
+            </h2>
+
+        </div>
+
+    </div>
+
+    <div class="panel">
+
+        <h2>
+            Upload Security Log
+        </h2>
+
+        <input type="file"
+               id="logFile">
+
+        <button onclick="uploadLog()">
+            Analyze Log
+        </button>
+
+    </div>
+
+    <div class="panel">
+
+        <h2>
+            Threat Analysis
+        </h2>
+
+        <div id="analysisResult">
+
+        </div>
+
+    </div>
+
+    <div class="panel">
+
+        <h2>
+            Threat Intelligence
+        </h2>
+
+        <div id="intelResult">
+
+        </div>
+
+    </div>
+
+    <div class="panel">
+
+        <h2>
+            MITRE ATT&CK Mapping
+        </h2>
+
+        <div id="mitreResult">
+
+        </div>
+
+    </div>
+
+    <div class="panel">
+
+        <h2>
+            Ask AI Assistant
+        </h2>
+
+        <input type="text"
+               id="question"
+               placeholder="Ask Cybersecurity Question">
+
+        <button onclick="askAI()">
+            Ask AI
+        </button>
+
+        <div id="chatResult">
+
+        </div>
+
+    </div>
+
+    <div class="panel">
+
+        <h2>
+            Download Report
+        </h2>
+
+        <a href="/download_report"
+           target="_blank">
+
+           📄 Download PDF Report
+
+        </a>
+
+    </div>
+
+</div>
+
+<script src="{{ url_for('static',
+filename='script.js') }}"></script>
+
+</body>
+
+</html>

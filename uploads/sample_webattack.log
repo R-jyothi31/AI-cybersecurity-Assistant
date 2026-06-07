@@ -1,0 +1,3 @@
+GET /admin HTTP/1.1
+GET /wp-admin HTTP/1.1
+GET /phpmyadmin HTTP/1.1
